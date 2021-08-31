@@ -2,6 +2,7 @@ import 'package:demo_current_location/google_map.dart';
 import 'package:demo_current_location/provider/location_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:demo_current_location/provider/online.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,8 +19,12 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
+        
         title: 'Flutter Demo',
-        home: GoogleMapPage(),
+        home: Scaffold(
+          body: GoogleMapPage()
+          ),
+       
       ),
     );
   }

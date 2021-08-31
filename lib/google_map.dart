@@ -18,11 +18,7 @@ class _GoogleMapPageState extends State<GoogleMapPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Google Map Live Location"),
-          backgroundColor: Colors.blueGrey[800],
-        ),
-        body: googleMapUI());
+      body: googleMapUI());
   }
 
   Widget googleMapUI() {

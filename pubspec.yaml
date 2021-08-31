@@ -31,6 +31,8 @@ dependencies:
   google_maps_flutter: ^2.0.6
   location: ^4.3.0
   provider: ^6.0.0
+  lite_rolling_switch: ^0.1.1
+ 
 
 dev_dependencies:
   flutter_test:
