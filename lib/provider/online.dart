@@ -27,12 +27,7 @@ class _OnlineButtonState extends State<OnlineButton> {
               onChanged: (bool val) {
                 isSwitched = !isSwitched;
                 setState(() {
-                  MultiProvider(providers: [
-                    ChangeNotifierProvider(
-                      create: (context) => LocationProvider(),
-                      child: GoogleMapPage(),
-                    ),]
-                  );
+                 
                 });
               },
             ),
