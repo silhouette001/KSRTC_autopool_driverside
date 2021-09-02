@@ -13,18 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => LocationProvider(),
-          child: GoogleMapPage(),
-        )
+        ChangeNotifierProvider(create: (context) => LocationProvider())
       ],
       child: MaterialApp(
-        
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: Scaffold(
-          body: GoogleMapPage()
-          ),
-       
+        home: Scaffold(body: GoogleMapPage()),
       ),
     );
   }
