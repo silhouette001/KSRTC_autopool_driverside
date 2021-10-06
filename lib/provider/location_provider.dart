@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 class LocationProvider with ChangeNotifier {
   Location _location;
   Location get location => _location;
-  LatLng _locationPosition = LatLng(9.9816, 76.2999);
+  LatLng _locationPosition = LatLng(8.4697, 76.9818);
   LatLng get locationPosition => _locationPosition;
   bool locationServiceActive = false;
 

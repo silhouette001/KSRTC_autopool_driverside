@@ -15,11 +15,16 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (context) => LocationProvider())
       ],
-      child: MaterialApp(
+      child: MaterialApp(                             
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        home: Scaffold(body: GoogleMapPage()),
-      ),
+        home: Scaffold(body: 
+            GoogleMapPage(),
+            
+           
+        
+        )),
+      
     );
   }
 }
